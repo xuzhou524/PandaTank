@@ -68,5 +68,4 @@ class XZSwiftNavigationController: UINavigationController {
         }
         super.setViewControllers(viewControllers, animated: animated)
     }
-
 }
