@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class XZSwiftNavigationController: UINavigationController {
     
     override func viewWillLayoutSubviews() {
