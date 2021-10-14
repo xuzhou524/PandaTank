@@ -4,6 +4,8 @@ use_frameworks!
 
 def pods
    pod 'SnapKit'
+   pod 'RxSwift'
+   pod 'FMDB'
 end
 
 
