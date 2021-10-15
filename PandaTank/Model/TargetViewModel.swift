@@ -12,36 +12,13 @@ import RxDataSources
 import RxRelay
 
 class TargetViewModel {
-    let sections = Observable.just([
-        MySection(header: "基本控件", items: [
-            "UILable的用法",
-            "UIText的用法",
-            "UIButton的用法"
-        ]),
-        MySection(header: "高级控件", items: [
-            "UITableView的用法",
-            "UICollectionViews的用法"
-        ])
+    let dataSource = Observable.just([
+        TargetModel(title: "测试", totalAmount: "0000"),
+        TargetModel(title: "测试", totalAmount: "0000"),
+        TargetModel(title: "测试", totalAmount: "0000"),
+        TargetModel(title: "测试", totalAmount: "0000"),
+        TargetModel(title: "测试", totalAmount: "0000"),
+        TargetModel(title: "测试", totalAmount: "0000"),
+        TargetModel(title: "测试", totalAmount: "0000")
     ])
-
-}
-
-
-//自定义Section
-struct MySection {
-    var header: String
-    var items: [Item]
-}
- 
-extension MySection : AnimatableSectionModelType {
-    typealias Item = String
-     
-    var identity: String {
-        return header
-    }
-     
-    init(original: MySection, items: [Item]) {
-        self = original
-        self.items = items
-    }
 }

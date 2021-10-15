@@ -135,23 +135,23 @@ class HomeViewController: UIViewController {
 //        ])
         
         //创建数据源
-        let dataSource = RxTableViewSectionedAnimatedDataSource<MySection>(
-            //设置单元格
-            configureCell: { ds, tv, ip, item in
-                let cell:LeftTitleTableViewCell = tv.dequeueReusableCell(withIdentifier: "LeftTitleTableViewCell") as! LeftTitleTableViewCell
-                cell.nodeNameLabel.text = "\(ip.row)：\(item)"
-                return cell
-            },
-            //设置分区头标题
-            titleForHeaderInSection: { ds, index in
-                return ds.sectionModels[index].header
-            }
-        )
+//        let dataSource = RxTableViewSectionedAnimatedDataSource<TargetModel>(
+//            //设置单元格
+//            configureCell: { ds, tv, ip, item in
+//                let cell:LeftTitleTableViewCell = tv.dequeueReusableCell(withIdentifier: "LeftTitleTableViewCell") as! LeftTitleTableViewCell
+//                cell.nodeNameLabel.text = "\(ip.row)：\(item)"
+//                return cell
+//            },
+//            //设置分区头标题
+//            titleForHeaderInSection: { ds, index in
+//                return ds.sectionModels[index].header
+//            }
+//        )
         
         //绑定单元格数据
-        TargetViewModel().sections
-            .bind(to: tableView.rx.items(dataSource: dataSource))
-            .disposed(by: disposeBag)
+//        TargetViewModel().sections
+//            .bind(to: tableView.rx.items(dataSource: dataSource))
+//            .disposed(by: disposeBag)
         
     }
     

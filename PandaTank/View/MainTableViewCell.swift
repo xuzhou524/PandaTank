@@ -21,6 +21,12 @@ class MainTableViewCell: UITableViewCell {
         label.font = XZFontWithSize(16)
         return label
     }()
+    
+    var amountLabel: UILabel = {
+        let label =  UILabel()
+        label.font = XZFontWithSize(14)
+        return label
+    }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier);
@@ -39,17 +45,30 @@ class MainTableViewCell: UITableViewCell {
             make.top.equalToSuperview().offset(5)
             make.left.equalToSuperview().offset(20)
             make.right.equalToSuperview().offset(-20)
-            make.height.equalTo(100)
+            make.height.equalTo(120)
             make.bottom.equalToSuperview().offset(-5)
         }
         
         bgImageView.addSubview(titleLabel)
-        
         titleLabel.snp.makeConstraints{ (make) -> Void in
+            make.left.equalToSuperview().offset(15)
+            make.right.equalToSuperview().offset(-15)
+            make.top.equalToSuperview().offset(20)
+        }
+        
+        bgImageView.addSubview(amountLabel)
+        amountLabel.snp.makeConstraints{ (make) -> Void in
             make.left.equalToSuperview().offset(15)
             make.right.equalToSuperview().offset(-15)
             make.centerY.equalToSuperview()
         }
+        
+        
+        
+        
+        titleLabel.text = "365存钱打开"
+        amountLabel.text = "104821.00/243343.00"
+        
     
     }
 

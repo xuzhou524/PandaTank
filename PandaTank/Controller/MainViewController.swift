@@ -44,20 +44,14 @@ class MainViewController: UIViewController {
     
     func bindViewModel(){
         
-        //创建数据源
-        let dataSource = RxTableViewSectionedAnimatedDataSource<MySection>(
-            //设置单元格
-            configureCell: { ds, tableView, indexPath, item in
-                let cell = getCell(tableView, cell: MainTableViewCell.self, indexPath: indexPath)
-                cell.titleLabel.text = "\(indexPath.row)：\(item)"
+        TargetViewModel().dataSource
+            .bind(to: tableView.rx.items, curriedArgument: { (tableView, row, item) -> UITableViewCell in
+                let cell = getCell(tableView, cell: MainTableViewCell.self, indexPath: NSIndexPath.init(row: row, section: 0) as IndexPath)
+                cell.titleLabel.text = "\(item.title)"
+                cell.amountLabel.text = "\(item.totalAmount)"
                 return cell
-            }
-        )
-        
-        //绑定单元格数据
-        TargetViewModel().sections
-            .bind(to: tableView.rx.items(dataSource: dataSource))
-            .disposed(by: disposeBag)
+
+            }).disposed(by: disposeBag)
         
     }
 

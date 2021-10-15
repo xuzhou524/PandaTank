@@ -30,6 +30,7 @@
 		1688CD38271822EF008D80A9 /* TargetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1688CD37271822EF008D80A9 /* TargetViewModel.swift */; };
 		1688CD3A27195FBA008D80A9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1688CD3927195FB9008D80A9 /* MainViewController.swift */; };
 		1688CD3C27196239008D80A9 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1688CD3B27196239008D80A9 /* MainTableViewCell.swift */; };
+		1688CD3E27197208008D80A9 /* TargetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1688CD3D27197208008D80A9 /* TargetModel.swift */; };
 		F14D15EFC14AF3DAF677F5AC /* Pods_PandaTank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6217CF90CC362146C42BAEA /* Pods_PandaTank.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		1688CD37271822EF008D80A9 /* TargetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetViewModel.swift; sourceTree = "<group>"; };
 		1688CD3927195FB9008D80A9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1688CD3B27196239008D80A9 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		1688CD3D27197208008D80A9 /* TargetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetModel.swift; sourceTree = "<group>"; };
 		4E1EA40B4461C611245259F3 /* Pods-PandaTank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaTank.debug.xcconfig"; path = "Target Support Files/Pods-PandaTank/Pods-PandaTank.debug.xcconfig"; sourceTree = "<group>"; };
 		E6217CF90CC362146C42BAEA /* Pods_PandaTank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaTank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F8699FFFC5DFADAB3C45B6 /* Pods-PandaTank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaTank.release.xcconfig"; path = "Target Support Files/Pods-PandaTank/Pods-PandaTank.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				1688CD37271822EF008D80A9 /* TargetViewModel.swift */,
+				1688CD3D27197208008D80A9 /* TargetModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				1688CD362718214D008D80A9 /* LeftTitleTableViewCell.swift in Sources */,
 				1688CD312717BFF9008D80A9 /* EventModel.m in Sources */,
 				1688CD2827153A4C008D80A9 /* Date+Extension.swift in Sources */,
+				1688CD3E27197208008D80A9 /* TargetModel.swift in Sources */,
 				1688CD042715264C008D80A9 /* UserViewController.swift in Sources */,
 				1688CCB927152157008D80A9 /* AppDelegate.swift in Sources */,
 				1688CCBB27152157008D80A9 /* SceneDelegate.swift in Sources */,
