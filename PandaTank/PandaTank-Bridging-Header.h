@@ -3,3 +3,5 @@
 //
 
 #import "UIColor+HZXColor.h"
+
+#import "EventModel.h"

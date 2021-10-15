@@ -14,9 +14,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let homeNav = XZSwiftNavigationController(rootViewController: HomeViewController())
-        homeNav.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "ic_HomeTabar")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "ic_HomeTabar_Sel")?.withRenderingMode(.alwaysOriginal))
-
+//        let homeNav = XZSwiftNavigationController(rootViewController: HomeViewController())
+//        homeNav.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "ic_HomeTabar")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "ic_HomeTabar_Sel")?.withRenderingMode(.alwaysOriginal))
+        
+        let homeNav = XZSwiftNavigationController(rootViewController: MainViewController())
+        homeNav.tabBarItem = UITabBarItem(title: "钱罐", image: UIImage(named: "ic_HomeTabar")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "ic_HomeTabar_Sel")?.withRenderingMode(.alwaysOriginal))
+        
         let userNav = XZSwiftNavigationController(rootViewController: UserViewController())
         userNav.tabBarItem = UITabBarItem(title: "我的", image: UIImage(named: "ic_UserTabar")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "ic_UserTabar_Sel")?.withRenderingMode(.alwaysOriginal))
 

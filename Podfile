@@ -6,6 +6,7 @@ def pods
    pod 'SnapKit'
    pod 'RxSwift'
    pod 'RxCocoa'
+   pod 'RxDataSources'
    pod 'FMDB'
 end
 
