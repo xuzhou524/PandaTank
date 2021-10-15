@@ -32,6 +32,7 @@ class MainTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier);
         self.setup();
     }
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -62,12 +63,6 @@ class MainTableViewCell: UITableViewCell {
             make.right.equalToSuperview().offset(-15)
             make.centerY.equalToSuperview()
         }
-        
-        
-        
-        
-        titleLabel.text = "365存钱打开"
-        amountLabel.text = "104821.00/243343.00"
         
     
     }
