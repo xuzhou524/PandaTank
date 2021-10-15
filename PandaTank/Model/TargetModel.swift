@@ -12,7 +12,6 @@ class TargetModel:NSObject {
     var title: String = ""
     var totalAmount: String = ""
     
-    
     init(title: String,totalAmount: String) {
         self.title = title
         self.totalAmount = totalAmount
