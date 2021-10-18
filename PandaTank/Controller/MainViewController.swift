@@ -48,7 +48,9 @@ class MainViewController: UIViewController {
             .bind(to: tableView.rx.items, curriedArgument: { (tableView, row, item) -> UITableViewCell in
                 let cell = getCell(tableView, cell: MainTableViewCell.self, indexPath: NSIndexPath.init(row: row, section: 0) as IndexPath)
                 cell.titleLabel.text = "\(item.title)"
-                cell.amountLabel.text = "\(item.totalAmount)"
+                cell.amountLabel.text = "目标：\(item.currentAmount) / \(item.totalAmount)"
+                let p:Float = ((Float("\(item.currentAmount)") ?? 0.0) / (Float(item.totalAmount) ?? 1.0)) * 100
+                cell.progressLabel.text = String(format: "%.2f", p) + "%"
                 return cell
 
             }).disposed(by: disposeBag)
